@@ -24,7 +24,7 @@
 | image      |            |                                |
 | user       | references | null: false, foreign_key: true |
    
-- belongs_to :users
+- belongs_to :user
 - has_many :comments
 
 
@@ -32,9 +32,9 @@
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
-| title      | text       | null: false                    |
+| text       | text       | null: false                    |
 | user       | references | null: false, foreign_key: true |
 | prototype  | references | null: false, foreign_key: true |
 
-- belongs_to :users
-- belongs_to :prototypes
+- belongs_to :user
+- belongs_to :prototype
